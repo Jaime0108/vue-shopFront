@@ -1,16 +1,13 @@
 <template>
   <div class="pagination">
-    <p>
+    <!-- 测试用的 -->
+    <!-- <p>
       start: {{ startNumAndEndNum.start }},end:
       {{ startNumAndEndNum.end }},pageNo: {{ pageNo }} totalPage:
       {{ totalPage }}
-    </p>
-    <button v-if="pageNo >= paginationSize - 1" @click="changPageNo(1)">
-      第一页
-    </button>
-    <button :disabled="pageNo == 1" @click="changPageNo(pageNo - 1)">
-      上一页
-    </button>
+    </p> -->
+    <button v-if="pageNo >= paginationSize - 1" @click="changPageNo(1)">第一页</button>
+    <button :disabled="pageNo == 1" @click="changPageNo(pageNo - 1)">上一页</button>
     <!-- v-if="pageNo > paginationSize - 1" -->
     <button :disabled="pageNo < paginationSize - 1">···</button>
 
